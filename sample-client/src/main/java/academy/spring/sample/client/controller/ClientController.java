@@ -11,25 +11,25 @@ import org.springframework.web.client.RestClient;
 @RequestMapping("/client")
 public class ClientController {
 
-	private final RestClient restClient;
 
-	public ClientController(RestClient.Builder restClientBuilder) {
-		restClient = restClientBuilder.baseUrl("http://localhost:8080/api/person").build();
-	}
+//	private final RestClient restClient;
+//
+//	public ClientController(RestClient.Builder restClientBuilder) {
+//		restClient = restClientBuilder.baseUrl("http://localhost:8080/api/person").build();
+//	}
 
+//	@GetMapping("/simpleGreeting")
+//	public String simpleGreeting() {
+//		return restClient.get().uri("/greeting").retrieve().body(String.class);
+//	}
 
-	@GetMapping("/simpleGreeting")
-	public String simpleGreeting() {
-		return restClient.get().uri("/greeting").retrieve().body(String.class);
-	}
-
-	@GetMapping("/responseEntityGreeting")
-	public ResponseEntity<String> greetingWithHeaders() {
-		ResponseEntity<String> result = restClient.get().uri("/reGreeting").retrieve().toEntity(String.class);
-		System.out.println("Response status: " + result.getStatusCode());
-		System.out.println("Response headers: " + result.getHeaders());
-		System.out.println("Contents: " + result.getBody());
-		return result;
-	}
+//	@GetMapping("/responseEntityGreeting")
+//	public ResponseEntity<String> greetingWithHeaders() {
+//		ResponseEntity<String> result = restClient.get().uri("/reGreeting").retrieve().toEntity(String.class);
+//		System.out.println("Response status: " + result.getStatusCode());
+//		System.out.println("Response headers: " + result.getHeaders());
+//		System.out.println("Contents: " + result.getBody());
+//		return result;
+//	}
 
 }
