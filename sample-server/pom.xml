@@ -8,13 +8,13 @@
 		<version>3.2.1</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>academy.spring</groupId>
-	<artifactId>sample</artifactId>
+	<groupId>academy.spring.sample</groupId>
+	<artifactId>server</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>sample</name>
-	<description>Sample Project for Spring Boot 3.2 Features</description>
+	<name>server</name>
+	<description>Simple web server for Spring Academy Lab</description>
 	<properties>
-		<java.version>21</java.version>
+		<java.version>17</java.version>
 	</properties>
 	<dependencies>
 		<dependency>
