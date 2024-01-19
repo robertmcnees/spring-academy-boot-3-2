@@ -15,6 +15,6 @@ public class BlockController {
 	@GetMapping("/block/{seconds}")
 	public void block(@PathVariable Integer seconds) throws InterruptedException {
 		Thread.sleep(seconds * 1000);
-		log.info("Blocked for {} seconds", seconds);
+		log.info("Running on thread: {}", Thread.currentThread());
 	}
 }
