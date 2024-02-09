@@ -14,9 +14,10 @@ import java.util.Optional;
 @Transactional
 public class JdbcClientPostService implements PostService {
 
+	private static final Logger log = LoggerFactory.getLogger(JdbcClientPostService.class);
+
 	//TODO: add JdbcClient
-
-
+	
 	@Override
 	public List<Post> findAll() {
 		return null;
