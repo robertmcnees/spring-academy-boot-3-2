@@ -16,7 +16,7 @@ public class PersonController {
 		return "Hello there!";
 	}
 
-	@GetMapping("/reGreeting")
+	@GetMapping("/responseEntityGreeting")
 	public ResponseEntity<String> responseEntitySimpleGreeting() {
 		HttpHeaders headers = new HttpHeaders();
 		headers.add("Spring-Is-Cool", "true");
@@ -24,5 +24,9 @@ public class PersonController {
 		return new ResponseEntity<>("Hello with headers!", headers, HttpStatus.OK);
 	}
 
+	@GetMapping("/personObjectGreeting")
+	public Person personObjectGreeting() {
+		return new Person("Greetings", "Reader");
+	}
 
 }
