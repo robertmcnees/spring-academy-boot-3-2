@@ -1,4 +1,4 @@
-package academy.spring.sample.server.controller;
+package academy.spring.sample.server.restclient;
 
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;

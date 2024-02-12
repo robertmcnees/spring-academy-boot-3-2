@@ -1,4 +1,4 @@
-package academy.spring.sample.server.controller;
+package academy.spring.sample.server.virtualthreads;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
