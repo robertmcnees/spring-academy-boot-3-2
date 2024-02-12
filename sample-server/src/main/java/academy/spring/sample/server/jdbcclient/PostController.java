@@ -12,9 +12,15 @@ public class PostController {
 
 	private final PostService postService;
 
+	// Use this constructor for the existing JdbcTemplate
 	public PostController(JdbcTemplatePostService postService) {
 		this.postService = postService;
 	}
+
+	// Use this constructor for the newly created JdbcClient
+//	public PostController(JdbcClientPostService postService) {
+//		this.postService = postService;
+//	}
 
 	@GetMapping("")
 	List<Post> findAll() {
